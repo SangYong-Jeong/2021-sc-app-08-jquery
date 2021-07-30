@@ -1,0 +1,14 @@
+.header-wrapper {display: flex; justify-content: space-between; background-color: #333; color: #fff; font-size: 18px;}
+
+.navi-wrap {display: flex; padding-right: 50px;}
+.logo, .navi {padding: 12px 32px; position: relative; cursor: pointer;}
+.navi .sub-wp {position: absolute; top: 42px; background-color: #333; display: none;}
+.navi .sub-wp .sub {padding: 12px 16px; min-width: 120px;}
+.navi .sub-wp .sub:hover {background-color: #ddd; color: #111;
+	cursor: pointer;}
+
+
+.wrapper {max-width: 1200px; margin: auto; padding: 24px; display: flex;
+justify-content: center;}
+.btn {margin: 0 2px;}
+.box {width: 500px; height: 500px; background-color: crimson;}
