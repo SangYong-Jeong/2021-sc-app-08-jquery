@@ -1,5 +1,4 @@
-console.log($);
-console.log(jQuery);
+var jQuery = function(el) {
+	return document.querySelectorAll(el);
+}
 
-$()
-jQuery()
