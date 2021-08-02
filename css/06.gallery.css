@@ -1,0 +1,4 @@
+.wrapper {max-width: 1200px; margin: 50px auto;}
+.stage-wrap {max-width: 400px; margin: 0 auto 8px auto; border: 1px solid #ddd; padding: 8px;}
+.list-wrap {display: flex; justify-content: center;}
+.list-wrap .list {max-width: 60px; margin: 4px; border: 1px solid #ddd; padding: 2px;}
