@@ -1,0 +1,8 @@
+.wrapper {max-width: 1200px; margin: 50px auto; overflow: hidden;}
+.prd-wrap {display: flex; flex-wrap: wrap; width: 101%;}
+.prd-wrap .prd {width: 23%; margin: 1%; border: 1px solid #ddd;}
+.prd-wrap .prd .conts {padding: 16px;}
+.prd-wrap .prd .conts .imgs {margin-bottom: 12px;}
+.prd-wrap .prd .conts .name {font-size: 24px; margin-bottom: 16px;}
+.prd-wrap .prd .conts .content {font-size: 15px; margin-bottom: 12px;}
+.prd-wrap .prd .conts .price {font-size: 20px; font-weight: bold;}
