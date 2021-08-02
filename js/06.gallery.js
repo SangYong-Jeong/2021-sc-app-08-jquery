@@ -15,7 +15,10 @@ for(var i=0, html; i<foods.length; i++) {
 	$('.list-wrap').append(html);
 }
 $('.list-wrap .thumb').click(function() {
-	$('.stage-wrap .big').attr('src', $(this).attr('src'));
+	var html = '<dv class="hover"><img src="'+$(this).attr('src')+'" class="w100"></div>';
+	$('.stage-wrap').append(html);
+	$('.stage-wrap .hover').stop().hide();
+	$('.stage-wrap .hover').stop().fadeIn(1000);
 	$('.stage-wrap .name').html($(this).attr('alt'));
 	$('.list-wrap .list').removeClass('active');
 	$(this).parent().addClass('active');

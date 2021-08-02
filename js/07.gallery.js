@@ -15,4 +15,17 @@ for(var i=0, html; i<foods.length; i++) {
 	document.querySelector('.list-wrap').innerHTML += html
 }
 
-document.querySelectorAll('.list-wrap .list')
+var big = document.querySelector('.stage-wrap .big');
+var thumbs = document.querySelectorAll('.list-wrap .thumb');
+var lists = document.querySelectorAll('.list-wrap .list');
+var title = document.querySelector('.stage-wrap .name');
+for(var i=0; i<thumbs.length; i++) {
+	thumbs[i].addEventListener('click', function() {
+		big.src = this.src;
+		title.innerHTML = this.alt;
+		for(var j=0; j<lists.length; j++) {
+			lists[j].classList.remove('active');
+		}
+		this.parentNode.classList.add('active');
+	})
+}
