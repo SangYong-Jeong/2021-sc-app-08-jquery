@@ -12,11 +12,7 @@ for(var i=0, html; i<foods.length; i++) {
 	html  = '<li class="list">';
 	html += '<img src="'+foods[i].src+'" class="w100 thumb" alt="'+foods[i].name+'">';
 	html += '</li>';
-	$('.list-wrap').append(html);
+	document.querySelector('.list-wrap').innerHTML += html
 }
-$('.list-wrap .thumb').click(function() {
-	$('.stage-wrap .big').attr('src', $(this).attr('src'));
-	$('.stage-wrap .name').html($(this).attr('alt'));
-	$('.list-wrap .list').removeClass('active');
-	$(this).parent().addClass('active');
-});
+
+document.querySelectorAll('.list-wrap .list')
