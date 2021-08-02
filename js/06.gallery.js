@@ -16,9 +16,10 @@ for(var i=0, html; i<foods.length; i++) {
 }
 $('.list-wrap .thumb').click(function() {
 	var html = '<dv class="hover"><img src="'+$(this).attr('src')+'" class="w100"></div>';
-	$('.stage-wrap').append(html);
-	$('.stage-wrap .hover').stop().hide();
-	$('.stage-wrap .hover').stop().fadeIn(1000);
+	$(html).appendTo('.stage-wrap').stop().hide().fadeIn(1000, function() {
+		$('.stage-wrap .big').attr('src', $(this).find('img').attr('src'))
+		$(this).remove();
+	});
 	$('.stage-wrap .name').html($(this).attr('alt'));
 	$('.list-wrap .list').removeClass('active');
 	$(this).parent().addClass('active');
