@@ -1,4 +1,8 @@
 .wrapper {max-width: 1200px; margin: 50px auto;}
-.stage-wrap {max-width: 400px; margin: 0 auto 8px auto; border: 1px solid #ddd; padding: 8px;}
+.stage-wrap {max-width: 400px; margin: 0 auto 8px auto; border: 1px solid #ddd; padding: 8px; position: relative;}
+.stage-wrap h2.name {position: absolute; background-color: rgba(0, 0, 0, .9); color: #fff; padding: 8px 12px; font-size: 20px; right: 8px; bottom: 8px;}
 .list-wrap {display: flex; justify-content: center;}
-.list-wrap .list {max-width: 60px; margin: 4px; border: 1px solid #ddd; padding: 2px;}
+.list-wrap .list {max-width: 60px; margin: 4px; border: 1px solid #ddd; padding: 2px; cursor: pointer;}
+.list-wrap .list img {opacity: .7;}
+.list-wrap .list.active {border: 1px solid red;}
+.list-wrap .list.active img {opacity: 1;}
