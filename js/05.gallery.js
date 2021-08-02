@@ -64,9 +64,13 @@ var products = [
 	}, 
 ]
 
+
 $(document).ready(function() {
-	var cnt = products.length;
-	for(var i=0, html;i<cnt;i++) {
+	$('.modal-wrapper .bt-close').click(function() {
+		// $('.modal-wrapper').css('display', 'none');
+		$('.modal-wrapper').stop().fadeOut(800);
+	});
+	for(var i=0, html;i<products.length;i++) {
 		html  = '<li class="prd">';
 		html += '<div class="imgs">';
 		html += '<img src="'+products[i].src+'" class="w100">';
@@ -77,8 +81,16 @@ $(document).ready(function() {
 		html += '<div class="price">$'+products[i].price+'</div>';
 		html += '</div>';
 		html += '</li>';
-		// $('.prd-wrap').html( $('.prd-wrap').html() + html );
-		// $('.prd-wrap').prepend(html);
 		$('.prd-wrap').append(html);
 	}
+	$('.prd img').click(function() {
+		var src = $(this).attr('src');
+		$('.modal-wrap img').attr('src', src);
+		// $('.modal-wrapper').css('display', 'flex');
+		$('.modal-wrapper').stop().fadeIn(800);
+	});
 });
+
+
+		// $('.prd-wrap').html( $('.prd-wrap').html() + html );
+		// $('.prd-wrap').prepend(html);
