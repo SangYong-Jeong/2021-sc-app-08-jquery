@@ -82,7 +82,15 @@ function onSubmit() { // 검증(Validation)
 		f.math.focus();
 		return false;
 	}
-	return true;
+	scores.push({id: scores.length + 1,
+	name: name,
+	kor: kor,
+	eng: eng,
+	math: math})
+	createRow(scores[scores.length -1]); // 마지막 요소의 값
+	f.reset();
+	f.name.focus();
+	return false;
 }
 
 
