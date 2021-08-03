@@ -1,3 +1,4 @@
+html, body {height: 3000px;}
 .header-wrapper {display: flex; justify-content: space-between; background-color: #333; color: #fff; font-size: 18px;}
 
 .navi-wrap {display: flex; padding-right: 50px;}
@@ -12,3 +13,11 @@
 justify-content: center;}
 .btn {margin: 0 2px;}
 .box {width: 500px; height: 500px; background-color: crimson;}
+
+
+.wrapper2 {max-width: 1200px; margin: auto; padding: 24px; position: relative;}
+.box2 {width: 100px; height: 100px; background-color: crimson; position: absolute; top: 0;}
+.box3 {width: 100px; height: 100px; background-color: crimson; position: absolute; top: 120px;}
+.box4 {width: 100px; height: 100px; background-color: crimson; position: absolute; top: 240px; border: 10px dotted black;}
+.box5 {width: 100px; height: 100px; background-color: crimson; position: absolute; top: 360px; transition: all 1s; left: 0;}
+.box5.active {background-color: #071c77; width: 500px; height: 500px; left: 500px; transform: rotate(360deg);}
