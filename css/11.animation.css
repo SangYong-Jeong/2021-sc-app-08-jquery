@@ -1,1 +1,2 @@
-.box {width: 200px; height: 200px; background-color: crimson; opacity: 1;}
+.box {width: 200px; height: 200px; background-color: crimson;}
+.box2 {width: 100px; height: 100px; background-color: crimson; position: absolute;}

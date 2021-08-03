@@ -1,5 +1,5 @@
 var d = new Date(); // 객체의 Instance
-
+console.log(Date);
 var nowDate = d.getFullYear() + '-' + zp(d.getMonth() +1) + '-' + zp(d.getDate()) + ' ' + zp(d.getHours()) + ':' + zp(d.getMinutes()) + ':' + zp(d.getSeconds());  
 console.log(nowDate); // ISO 시간표기
 
