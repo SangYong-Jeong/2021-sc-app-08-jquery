@@ -18,11 +18,11 @@
 			<hr>
 			<button class="bt-show btn btn-primary">성적 입력</button>
 		</div>
-		<form class="score-form form-inline" style="display: none;">
-			<input class="form-control" type="text" name="name" placeholder="이름">
-			<input class="form-control" type="number" name="kor" min="0" max="100"  placeholder="국어">
-			<input class="form-control" type="number" name="eng" min="0" max="100"  placeholder="영어">
-			<input class="form-control" type="number" name="math" min="0" max="100" placeholder="수학">
+		<form name="scoreForm" onsubmit="return onSubmit();" class="score-form form-inline" style="display: none;">
+			<input class="form-control" type="text" name="name" placeholder="이름" required>
+			<input class="form-control" type="number" name="kor" min="0" max="100"  placeholder="국어" required>
+			<input class="form-control" type="number" name="eng" min="0" max="100"  placeholder="영어" required>
+			<input class="form-control" type="number" name="math" min="0" max="100" placeholder="수학" required>
 			<button class="bt-save btn btn-primary mr-1">등록</button>
 			<button class="bt-reset btn btn-danger" type="reset">다시작성</button>
 		</form>
@@ -38,7 +38,7 @@
 					<th>평균</th>
 				</tr>
 			</thead>
-			<tbody></tbody>
+			<tbody class="score-tbody"></tbody>
 		</table>
 	</div>
 	<script src="../js/util.js"></script>
