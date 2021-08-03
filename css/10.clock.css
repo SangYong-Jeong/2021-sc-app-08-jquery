@@ -2,3 +2,4 @@ body {width: 100%; height: 100vh; display: flex; justify-content: center; align-
 .wrapper {font-size: 50px; color: #fff; line-height: 1;}
 .wrapper .date-wp {margin-bottom: 4px;}
 .wrapper .time-wp {font-size: 120px;}
+.wrapper .timestamp-wp {font-size: 18px;}
